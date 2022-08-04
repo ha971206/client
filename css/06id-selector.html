@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        /* element 선택자 */
+        h1 {
+            color: brown;
+        }
+
+        /* class 선택자 */
+        .fire {
+            text-decoration: underline;
+        }
+
+        /* id 선택자 */
+        /* id 속성(attribute) 으로 요소 선택 */
+        /* 
+            id 속성 값은 같은 페이지 내에서 
+            서로 다른 요소가 같은 값을 가질 수 없음 
+        */
+        /* 
+            ex) calss="fire my phone" 가능
+            ex) id="fire my phone" 불가능 
+        */
+        /* 
+            id 속성값으로 사용할 수 있는 문자 
+            영문대소문자, 숫자, -, _
+        */
+        #head1 {
+            background-color: yellow;
+        }
+
+        #hand1 {
+            color: blue;
+        }
+
+        #head2 {
+            border: 5px solid;
+            /* display: grid; */
+            /* justify-content: center; */
+            /* text-align: center; */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fire">Lorem, ipsum.</h1>
+    <h1 class="fire">Laborum, explicabo?</h1>
+    <h1 id="head1">Ipsa, debitis!</h1>
+    <h1 id="hand1">Recusandae, quasi.</h1>
+    <h1 id="head1 hand1" class="fire">Praesentium, id?</h1>
+    <h1 id="head1" class="fire">Quae, distinctio.</h1>
+    <h1 id="head2">Est, accusamus?</h1>
+    <h1>Vitae, doloribus.</h1>
+    <h1>Omnis, aperiam.</h1>
+    <h1>Dolore, sit.</h1>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        * {
+            font-size: 30px;
+        }
+
+        /* 인접한(p직전에 h1이 있는경우) 형제 셀렉터 */
+        h1+p {
+            color: aqua;
+        }
+
+        /* 인접한(p직전에 error클래스 가 있는경우) 형제 셀렉터 */
+        .error+p {
+            border: 5px solid;
+        }
+
+        .note+p {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.error+p>lorem^h1.note+p>lorem -->
+    <!-- +는 바로 다음에 오게만듬 -->
+    <h1 class="error"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus explicabo consectetur soluta iusto quibusdam sed laborum similique, magnam eaque accusamus odit facilis nesciunt provident minus illo laboriosam iure earum!
+    </p>
+    <h1 class="note"></h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo ex commodi. Reiciendis, odio perspiciatis perferendis consequuntur quaerat, excepturi nemo, unde voluptatibus praesentium consequatur doloribus ut quo dicta doloremque beatae!
+    </p>
+</body>
+</html>

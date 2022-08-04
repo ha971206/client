@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        * {
+            font-size: 30px;
+        }
+
+        p {
+            text-decoration: underline;
+        }
+
+        /* p이긴 하나 부모클래스인 error에만 적용 */
+        /* error안에 있는 p만 */
+        .error > p {
+            background-color: yellow;
+        }
+
+        div > p {
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- 조부모note 안에 부모error 안에 자식 p -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem, ipsum.
+            </p>
+        </div>
+    </div>
+
+    <!-- 조부모error 안에 부모 note 안에 자식 p -->
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem, ipsum.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
