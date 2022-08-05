@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        ul {
+            background-color: chocolate;
+        }
+        li {
+            background-color: greenyellow;
+        }
+        /* odd 홀수 */
+        h1:nth-child(odd) {
+            background-color: yellow;
+            color: red;
+        }
+        /* even 짝수 */
+        h1:nth-child(even) {
+            background-color: aqua;
+            color: pink;
+        }
+        .line {
+            color: purple;
+            border-width: 50px;
+            border-style: double;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Lorem, ipsum dolor.
+    </h1>
+    <h1>
+        Consectetur, similique numquam!
+    </h1>
+    <h1>
+        Illum, consequatur autem?
+    </h1>
+    <h1>
+        Iure, quas ex!
+    </h1>
+    <h1>
+        Asperiores, eum soluta.
+    </h1>
+    <h1>
+        Neque, ea eum?
+    </h1>
+    
+    <hr class="line">
+    <hr class="line">
+
+    <h1>
+        block level element
+    </h1>
+    <p>가장 넓은 너비를 가지고 새로운 줄에 배치됨</p>
+    <p>width, height, padding, margin이 의도대로 적용됨</p>
+
+    <!-- ul>li*3>lorem3 -->
+    <ul>
+        <li>
+            Lorem, ipsum dolor.
+        </li>
+        <li>
+            Mollitia, expedita iure.
+        </li>
+        <li>
+            Reprehenderit, aspernatur debitis.
+        </li>
+    </ul>
+    
+    <hr>
+    <h1>&lt;div&gt; 요소</h1>
+    <div>대표적인 block 요소, 패딩, 보더,마진 등 브라우저 기본 스타일이 없음<div>
+    <div>여러 요소 (주로 vlock요소 ) 를 감싸서 섹션을 나누는 용도로 사용</div>
+    <div>
+        Lorem, ipsum dolor.
+    </div>
+    <div>확실히 편하네</div>
+</body>
+</html>

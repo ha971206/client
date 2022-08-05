@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .asd {
+            display: flex;
+            background-color: greenyellow;
+        }
+        .item {
+            font-size: 48px;
+            text-align: center;
+        }
+        .item:nth-child(odd){
+            background-color: gold;
+        }
+        .item:nth-child(even){
+            background-color: aqua;
+        }
+        .item:nth-child(odd):hover{
+            background-color: aqua;
+        }
+        .item:nth-child(even):hover{
+            background-color: gold;
+        }
+        .asd>div:hover{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="asd">
+        <div class="item" style="flex:2">1</div>
+        <div class="item" style="flex:1">2</div>
+        <div class="item" style="flex:1">3</div>
+        <div class="item" style="flex:3">4</div>
+        <div class="item" style="flex:1">5</div>
+    </div>
+</body>
+</html>
