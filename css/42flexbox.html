@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .container{
+            display: flex;
+            background-color: gray;
+            height: 200px;
+            /* 가로축 */
+            justify-content: flex-start;
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            
+            /* 세로축 */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            align-items: stretch;
+            /* align-items: baseline; */
+        }
+        .item{
+            font-size: 48px;
+            font-weight: bold;
+            width: 100px;
+        }
+        .item:nth-child(odd){
+            background-color: gold;
+        }
+        .item:nth-child(even){
+            background-color: aqua;
+        }
+        #item3{
+            font-size: 96px;
+            /* 특정 개체의 거리만 벌리고싶다. */
+            margin-right: auto;
+        }
+        #item4{
+            /* margin-left: 100px; */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .container>#item$.item*5{$} -->
+    <!-- flex container -->
+    <div class="container">
+        <!-- flex items -->
+        <div id="item1" class="item">1</div>
+        <div id="item2" class="item">2</div>
+        <div id="item3" class="item">3</div>
+        <div id="item4" class="item">4</div>
+        <div id="item5" class="item">5</div>
+    </div>
+</body>
+</html>

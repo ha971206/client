@@ -3,40 +3,49 @@
 <html>
 <head>
     <style>
-        .mama{
-            display: flex;!important;
-            text-align: center;
+        .papa{
+            display: flex;
         }
-        .main>.big{
+        
+        .big{
             font-size: 60px;
-            font-weight: bold;
-            padding: 30px 10px;
         }
-        .item1{
+        #side1{
             background-color: green;
-            color: whitesmoke;
-            padding: 30px 1px;
-            width: 150px;
-            height: 20px;
-            /* display: flex; */
-            /* padding: 1px; */
-            }
+            color: white;
+            width: 200px;
+            height: 50px;
+        }
+        #side2{
+            background-color: #fffb00;
+            color: black;
+            flex: 1;
+        }
+        #side3{
+            background-color: black;
+            color: white;
+        }
+        #side4{
+            background-color: pink;
+            color: black;
+        }
     </style>
 </head>
 <body>
-    <div class="mama">
-        <div class="main">
+    <div class="papa">
+        <div class="mama" style="text-align: center;flex: 1;">
             <div class="big">HTML</div>
-            <div>The language for building web pages</div>
             <br>
-            <div class="item1">Learn HTML</div>
-            <div id="item2">Video Tutorial</div>
-            <div id="item3">HTML Reference</div>
-            <div id="item4">Buy Certificate</div>
+            <div class="normal">The language for building web pages</div>
+            <br>
+            <div id="side1">Learn HTML</div>
+            <div id="side2">Video Tutorial</div>
+            <div id="side3">HTML Reference</div>
+            <div id="side4">Buy Certificate</div>
         </div>
-
-        <div class="example">
-            <div class="thin">HTML Example:</div>
+        <hr>
+        <div class="sub" style="text-align: left;flex: 1;">
+            <div class="normal">HTML Example:</div>
             <div class="small"></div>
             <div class="small"></div>
             <div class="small"></div>
